@@ -1,0 +1,314 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Development & Tax Incentives | Myers &amp; Shah — Attorneys at Law</title>
+<meta name="description" content="Tax abatements, tax increment financing, and development incentive structuring for projects in DC and Virginia.">
+<link rel="canonical" href="https://myersshah.com/development-incentives.html">
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Fraunces:opsz,wght,SOFT@9..144,300..800,0..100&family=Source+Sans+3:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #1B2A4A; --navy-deep: #0F1B33; --navy-light: #2C3E66;
+  --gold: #C5A55A; --gold-light: #D4BA7A; --gold-pale: #F5EFE0;
+  --white: #FFFFFF; --off-white: #F8F6F1; --warm-gray: #E8E4DC;
+  --text-dark: #2A2A2A; --text-medium: #5A5A5A; --text-light: #8A8A8A;
+  --serif: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --nav-font: 'Space Grotesk', 'Helvetica Neue', Arial, sans-serif;
+  --sans: 'Source Sans 3', 'Helvetica Neue', Arial, sans-serif;
+  --nav: 'Space Grotesk', 'Helvetica Neue', Arial, sans-serif;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: var(--sans); color: var(--text-dark); background: var(--white); -webkit-font-smoothing: antialiased; }
+a { text-decoration: none; }
+
+/* NAV */
+.nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: var(--navy-deep); border-bottom: 1px solid rgba(197,165,90,0.2); }
+.nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 40px; display: flex; align-items: center; justify-content: space-between; height: 80px; }
+.nav-logo { display: flex; flex-direction: column; text-decoration: none; }
+.nav-logo-name { font-family: 'DM Serif Display', serif; font-size: 28px; font-weight: 400; color: var(--white); letter-spacing: 0.5px; }
+.nav-logo-type { font-family: var(--nav); font-size: 10px; font-weight: 500; color: var(--gold); letter-spacing: 3.5px; text-transform: uppercase; margin-top: 3px; }
+.nav-links { display: flex; gap: 32px; list-style: none; align-items: center; }
+.nav-links a { font-family: var(--nav); font-size: 12px; font-weight: 500; color: rgba(255,255,255,0.8); text-decoration: none; letter-spacing: 1.2px; text-transform: uppercase; transition: color 0.2s; }
+.nav-links a:hover, .nav-links a.active { color: var(--gold); }
+.nav-cta { font-family: var(--nav); font-size: 11px; font-weight: 600; color: var(--navy-deep) !important; background: var(--gold); padding: 11px 22px; letter-spacing: 1.8px; text-transform: uppercase; text-decoration: none; transition: all 0.2s; }
+.nav-cta:hover { background: var(--gold-light) !important; }
+.nav-phones { display: flex; gap: 16px; align-items: center; }
+.nav-phones a { font-family: var(--nav); font-size: 13px; font-weight: 400; color: rgba(255,255,255,0.85); text-decoration: none; transition: color 0.2s; letter-spacing: 0.3px; }
+.nav-phones a:hover { color: var(--gold); }
+.nav-phone-divider { width: 1px; height: 16px; background: rgba(255,255,255,0.2); }
+
+/* SHARED ELEMENTS */
+.section-label { font-family: var(--sans); font-size: 11px; font-weight: 600; letter-spacing: 4px; text-transform: uppercase; color: var(--gold); margin-bottom: 24px; display: inline-flex; align-items: center; gap: 12px; }
+.section-label::before { content: ''; display: inline-block; width: 32px; height: 1px; background: var(--gold); }
+.section-title { font-family: var(--serif); font-size: 52px; font-weight: 400; color: var(--navy); margin-bottom: 20px; line-height: 1.05; letter-spacing: -0.02em; font-variation-settings: 'opsz' 100, 'SOFT' 30; }
+.section-subtitle { font-family: var(--sans); font-size: 19px; font-weight: 300; color: var(--text-medium); line-height: 1.65; max-width: 640px; margin-bottom: 72px; }
+.hero-btn { display: inline-flex; align-items: center; gap: 12px; font-family: var(--sans); font-size: 12px; font-weight: 600; letter-spacing: 2.5px; text-transform: uppercase; padding: 18px 36px; background: var(--gold); color: var(--navy-deep); text-decoration: none; transition: all 0.3s; position: relative; }
+.hero-btn::after { content: '→'; font-size: 16px; transition: transform 0.3s; }
+.hero-btn:hover::after { transform: translateX(4px); }
+.hero-btn:hover { background: var(--gold-light); box-shadow: 0 12px 40px rgba(197,165,90,0.35); }
+
+/* HERO */
+.hero { min-height: 100vh; background: linear-gradient(165deg, var(--navy-deep) 0%, var(--navy) 40%, var(--navy-light) 100%); display: flex; align-items: center; position: relative; overflow: hidden; padding-top: 80px; }
+.hero::before { content: ''; position: absolute; top: -50%; right: -20%; width: 800px; height: 800px; border-radius: 50%; background: radial-gradient(circle, rgba(197,165,90,0.06) 0%, transparent 70%); }
+.hero::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, var(--gold), transparent); opacity: 0.3; }
+.hero-pattern { position: absolute; inset: 0; background-image: linear-gradient(rgba(197,165,90,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(197,165,90,0.03) 1px, transparent 1px); background-size: 60px 60px; pointer-events: none; }
+.hero-content { max-width: 1200px; margin: 0 auto; padding: 0 40px; position: relative; z-index: 2; text-align: center; }
+.hero-text { max-width: 780px; margin: 0 auto; }
+.hero-text h1 { font-family: var(--serif); font-size: 56px; font-weight: 500; color: var(--white); line-height: 1.15; margin-bottom: 24px; }
+.hero-text h1 em { color: var(--gold); font-style: italic; }
+.hero-text p { font-family: var(--sans); font-size: 19px; font-weight: 300; color: rgba(255,255,255,0.7); line-height: 1.7; margin-bottom: 44px; max-width: 620px; margin-left: auto; margin-right: auto; }
+.hero-credential-bar { display: flex; justify-content: center; gap: 48px; margin-top: 60px; padding-top: 40px; border-top: 1px solid rgba(197,165,90,0.15); }
+.hero-credential { text-align: center; }
+.hero-credential-label { font-family: var(--sans); font-size: 10px; font-weight: 500; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); opacity: 0.7; margin-bottom: 6px; }
+.hero-credential-value { font-family: var(--serif); font-size: 15px; font-weight: 400; color: rgba(255,255,255,0.8); }
+
+/* PRACTICE CARDS */
+.practice-section { background: var(--off-white); padding: 100px 40px; }
+.practice-section-inner { max-width: 1200px; margin: 0 auto; }
+.practice-grid-large { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3px; margin-bottom: 3px; }
+.practice-grid-small { display: grid; grid-template-columns: repeat(2, 1fr); gap: 3px; max-width: 800px; margin: 0 auto; }
+.practice-card { background: var(--white); padding: 48px 36px; text-align: center; transition: all 0.35s ease; position: relative; overflow: hidden; display: block; color: inherit; }
+.practice-card::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 3px; background: var(--gold); transform: scaleX(0); transition: transform 0.35s ease; }
+.practice-card:hover { background: var(--navy); transform: translateY(-4px); box-shadow: 0 12px 40px rgba(27,42,74,0.15); }
+.practice-card:hover::after { transform: scaleX(1); }
+.practice-card-icon { font-size: 36px; margin-bottom: 20px; display: block; transition: transform 0.3s; }
+.practice-card:hover .practice-card-icon { transform: scale(1.1); }
+.practice-card-title { font-family: var(--serif); font-size: 20px; font-weight: 500; color: var(--navy); margin-bottom: 14px; transition: color 0.3s; }
+.practice-card:hover .practice-card-title { color: var(--white); }
+.practice-card-desc { font-family: var(--sans); font-size: 15px; font-weight: 300; color: var(--text-medium); line-height: 1.7; transition: color 0.3s; }
+.practice-card:hover .practice-card-desc { color: rgba(255,255,255,0.7); }
+.practice-card-arrow { display: inline-block; margin-top: 20px; font-size: 13px; color: var(--gold); opacity: 0; transform: translateY(8px); transition: all 0.3s; letter-spacing: 1px; }
+.practice-card:hover .practice-card-arrow { opacity: 1; transform: translateY(0); }
+
+/* ATTORNEY PREVIEW */
+.attorneys-preview { background: var(--white); padding: 100px 40px; }
+.attorneys-preview-inner { max-width: 1200px; margin: 0 auto; text-align: center; }
+.attorneys-preview .section-subtitle { margin-left: auto; margin-right: auto; }
+.attorneys-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; max-width: 800px; margin: 0 auto 40px; }
+.attorney-card { text-align: center; transition: transform 0.3s; display: block; color: inherit; }
+.attorney-card:hover { transform: translateY(-4px); }
+.attorney-headshot { width: 200px; height: 240px; margin: 0 auto 24px; overflow: hidden; }
+.attorney-headshot img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
+.attorney-card-name { font-family: var(--serif); font-size: 22px; font-weight: 600; color: var(--navy); margin-bottom: 4px; }
+.attorney-card-title { font-family: var(--sans); font-size: 13px; font-weight: 500; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; }
+.attorney-card-blurb { font-family: var(--sans); font-size: 14px; font-weight: 300; color: var(--text-medium); line-height: 1.7; max-width: 320px; margin: 0 auto; }
+.attorneys-preview-link { display: inline-flex; align-items: center; gap: 8px; font-family: var(--sans); font-size: 13px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); text-decoration: none; transition: gap 0.2s; }
+.attorneys-preview-link:hover { gap: 14px; }
+
+/* FIRM INTRO */
+.firm-intro { background: var(--off-white); padding: 100px 40px; }
+.firm-intro-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+.firm-intro-text h2 { font-family: var(--serif); font-size: 36px; font-weight: 500; color: var(--navy); line-height: 1.25; margin-bottom: 24px; }
+.firm-intro-text p { font-family: var(--sans); font-size: 16px; font-weight: 300; color: var(--text-medium); line-height: 1.8; margin-bottom: 16px; }
+.firm-intro-highlights { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.highlight-box { background: var(--white); padding: 32px; border-top: 2px solid var(--gold); }
+.highlight-box h4 { font-family: var(--serif); font-size: 16px; font-weight: 600; color: var(--navy); margin-bottom: 8px; }
+.highlight-box p { font-family: var(--sans); font-size: 14px; font-weight: 300; color: var(--text-medium); line-height: 1.6; }
+
+/* CTA BAND */
+.cta-band { background: var(--navy); padding: 70px 40px; text-align: center; position: relative; overflow: hidden; }
+.cta-band::before { content: ''; position: absolute; inset: 0; background-image: linear-gradient(rgba(197,165,90,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(197,165,90,0.04) 1px, transparent 1px); background-size: 40px 40px; }
+.cta-band h3 { font-family: var(--serif); font-size: 30px; font-weight: 500; color: var(--white); margin-bottom: 12px; position: relative; }
+.cta-band p { font-family: var(--sans); font-size: 16px; font-weight: 300; color: rgba(255,255,255,0.6); margin-bottom: 32px; position: relative; }
+.cta-band .hero-btn { position: relative; }
+
+/* FOOTER */
+.footer { background: var(--navy-deep); padding: 60px 40px 40px; }
+.footer-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr 1fr; gap: 40px; }
+.footer-brand .nav-logo-name { font-size: 22px; margin-bottom: 4px; }
+.footer-brand .nav-logo-type { margin-bottom: 20px; }
+.footer-brand p { font-family: var(--sans); font-size: 14px; font-weight: 300; color: rgba(255,255,255,0.5); line-height: 1.7; }
+.footer h5 { font-family: var(--sans); font-size: 11px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 20px; }
+.footer ul { list-style: none; }
+.footer ul li { margin-bottom: 12px; }
+.footer ul a { font-family: var(--sans); font-size: 14px; font-weight: 300; color: rgba(255,255,255,0.5); text-decoration: none; transition: color 0.2s; }
+.footer ul a:hover { color: var(--gold); }
+.footer-bottom { max-width: 1200px; margin: 40px auto 0; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.08); display: flex; justify-content: space-between; align-items: center; }
+.footer-bottom p { font-family: var(--sans); font-size: 12px; color: rgba(255,255,255,0.3); }
+
+/* PA OVERVIEW */
+.pa-overview-hero { min-height: 60vh; background: var(--navy-deep); display: flex; align-items: flex-end; padding: 120px 40px 80px; position: relative; overflow: hidden; }
+.pa-overview-hero-bg { position: absolute; inset: 0; z-index: 0; }
+.pa-overview-hero-bg img { width: 100%; height: 100%; object-fit: cover; opacity: 0.45; }
+.pa-overview-hero-bg::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(15,27,51,0.4) 0%, rgba(15,27,51,0.85) 100%); }
+.pa-overview-hero::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, var(--gold), transparent); opacity: 0.3; z-index: 2; }
+.pa-overview-hero-inner { max-width: 1200px; margin: 0 auto; width: 100%; position: relative; z-index: 2; }
+.pa-overview-hero h1 { font-family: var(--serif); font-size: 72px; font-weight: 400; color: var(--white); margin-bottom: 20px; line-height: 1.02; letter-spacing: -0.03em; font-variation-settings: 'opsz' 144, 'SOFT' 30; }
+.pa-overview-hero p { font-family: var(--sans); font-size: 19px; font-weight: 300; color: rgba(255,255,255,0.85); max-width: 640px; line-height: 1.65; }
+.pa-overview-body { padding: 80px 40px; background: var(--off-white); }
+.pa-overview-body-inner { max-width: 1200px; margin: 0 auto; }
+.pa-row { display: grid; grid-template-columns: 1fr 1fr; background: var(--white); margin-bottom: 2px; transition: all 0.35s; overflow: hidden; }
+.pa-row a { text-decoration: none; color: inherit; }
+.pa-row:hover { box-shadow: 0 8px 40px rgba(27,42,74,0.1); transform: translateY(-2px); }
+.pa-row-accent { background: var(--navy); display: flex; align-items: center; justify-content: center; padding: 60px 48px; position: relative; overflow: hidden; }
+.pa-row-accent::before { content: ''; position: absolute; inset: 0; background-image: linear-gradient(rgba(197,165,90,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(197,165,90,0.05) 1px, transparent 1px); background-size: 30px 30px; }
+.pa-row:nth-of-type(even) { direction: rtl; }
+.pa-row:nth-of-type(even) > * { direction: ltr; }
+.pa-row-accent-content { text-align: center; position: relative; }
+.pa-row-accent-icon { font-size: 48px; margin-bottom: 16px; display: block; }
+.pa-row-accent-title { font-family: var(--serif); font-size: 26px; font-weight: 500; color: var(--white); }
+.pa-row-text { padding: 60px 48px; }
+.pa-row-text h3 { font-family: var(--serif); font-size: 22px; font-weight: 500; color: var(--navy); margin-bottom: 16px; }
+.pa-row-text p { font-family: var(--sans); font-size: 15px; font-weight: 300; color: var(--text-medium); line-height: 1.8; }
+.pa-row-services { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+.pa-row-tag { font-family: var(--sans); font-size: 12px; font-weight: 500; color: var(--navy); background: var(--gold-pale); padding: 6px 14px; }
+.pa-row-link { display: inline-flex; align-items: center; gap: 8px; margin-top: 20px; font-family: var(--sans); font-size: 13px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); text-decoration: none; transition: gap 0.2s; }
+.pa-row-link:hover { gap: 14px; }
+.pa-category-heading { margin: 20px 0 24px; padding-bottom: 14px; border-bottom: 2px solid var(--gold); }
+.pa-category-heading:first-child { margin-top: 0; }
+.pa-category-heading.secondary { margin-top: 60px; border-bottom-color: var(--warm-gray); }
+.pa-category-heading h2 { font-family: var(--serif); font-size: 26px; font-weight: 500; color: var(--navy); margin-bottom: 6px; }
+.pa-category-heading p { font-family: var(--sans); font-size: 14px; font-weight: 300; color: var(--text-medium); }
+
+/* PA DETAIL */
+.pa-detail-hero { min-height: 55vh; background: linear-gradient(165deg, var(--navy-deep) 0%, var(--navy) 100%); display: flex; align-items: flex-end; padding: 140px 40px 80px; position: relative; }
+.pa-detail-hero::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, var(--gold), transparent); opacity: 0.3; }
+.pa-detail-hero-inner { max-width: 1200px; margin: 0 auto; width: 100%; }
+.pa-detail-breadcrumb { font-family: var(--sans); font-size: 12px; color: rgba(255,255,255,0.4); letter-spacing: 1px; margin-bottom: 20px; }
+.pa-detail-breadcrumb a { color: var(--gold); text-decoration: none; }
+.pa-detail-hero h1 { font-family: var(--serif); font-size: 64px; font-weight: 400; color: var(--white); margin-bottom: 20px; line-height: 1.03; letter-spacing: -0.03em; font-variation-settings: 'opsz' 144, 'SOFT' 30; }
+.pa-detail-hero p { font-family: var(--sans); font-size: 19px; font-weight: 300; color: rgba(255,255,255,0.85); max-width: 680px; line-height: 1.65; }
+.pa-detail-body { padding: 80px 40px; background: var(--white); }
+.pa-detail-body-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr; gap: 80px; }
+.pa-detail-main h2 { font-family: var(--serif); font-size: 34px; font-weight: 400; color: var(--navy); margin-bottom: 24px; margin-top: 56px; line-height: 1.15; letter-spacing: -0.015em; font-variation-settings: 'opsz' 100, 'SOFT' 30; }
+.pa-detail-main h2:first-child { margin-top: 0; }
+.pa-detail-main p { font-family: var(--sans); font-size: 16px; font-weight: 300; color: var(--text-medium); line-height: 1.85; margin-bottom: 16px; }
+.pa-detail-main ul { list-style: none; margin: 16px 0 24px; }
+.pa-detail-main ul li { font-family: var(--sans); font-size: 15px; font-weight: 400; color: var(--text-dark); padding: 10px 0 10px 24px; border-bottom: 1px solid var(--warm-gray); position: relative; }
+.pa-detail-main ul li::before { content: ''; position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 8px; height: 2px; background: var(--gold); }
+.pa-detail-sidebar { position: sticky; top: 110px; align-self: start; }
+.sidebar-card { background: var(--off-white); padding: 36px; margin-bottom: 24px; border-top: 3px solid var(--gold); }
+.sidebar-card h4 { font-family: var(--serif); font-size: 18px; font-weight: 600; color: var(--navy); margin-bottom: 16px; }
+.sidebar-card p { font-family: var(--sans); font-size: 14px; font-weight: 300; color: var(--text-medium); line-height: 1.7; margin-bottom: 20px; }
+.sidebar-btn { display: block; text-align: center; font-family: var(--sans); font-size: 12px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; padding: 14px 28px; background: var(--navy); color: var(--white); text-decoration: none; transition: all 0.3s; }
+.sidebar-btn:hover { background: var(--gold); color: var(--navy-deep); }
+.sidebar-links a { display: block; font-family: var(--sans); font-size: 14px; font-weight: 400; color: var(--navy); padding: 12px 0; border-bottom: 1px solid var(--warm-gray); text-decoration: none; transition: color 0.2s; }
+.sidebar-links a:hover { color: var(--gold); }
+
+/* ATTORNEYS PAGE */
+.attorneys-page-body { padding: 80px 40px; background: var(--off-white); }
+.attorneys-page-inner { max-width: 1000px; margin: 0 auto; }
+.attorney-profile { display: grid; grid-template-columns: 280px 1fr; gap: 56px; background: var(--white); padding: 56px; margin-bottom: 32px; align-items: start; transition: box-shadow 0.3s; }
+.attorney-profile:hover { box-shadow: 0 8px 40px rgba(27,42,74,0.08); }
+.attorney-profile-photo { width: 280px; height: 340px; overflow: hidden; }
+.attorney-profile-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
+.attorney-profile-info h2 { font-family: var(--serif); font-size: 30px; font-weight: 600; color: var(--navy); margin-bottom: 4px; }
+.attorney-profile-title { font-family: var(--sans); font-size: 13px; font-weight: 500; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 24px; }
+.attorney-profile-bio { font-family: var(--sans); font-size: 16px; font-weight: 300; color: var(--text-medium); line-height: 1.85; margin-bottom: 16px; }
+.attorney-profile-details { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 28px; padding-top: 24px; border-top: 1px solid var(--warm-gray); }
+.attorney-detail-group h5 { font-family: var(--sans); font-size: 11px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
+.attorney-detail-group p { font-family: var(--sans); font-size: 14px; font-weight: 400; color: var(--text-dark); line-height: 1.6; }
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .nav-inner { padding: 0 20px; }
+  .nav-links { gap: 16px; }
+  .nav-phones { display: none; }
+  .hero-text h1 { font-size: 36px; }
+  .hero-credential-bar { flex-direction: column; gap: 16px; }
+  .practice-grid-large { grid-template-columns: 1fr; }
+  .practice-grid-small { grid-template-columns: 1fr; max-width: 100%; }
+  .firm-intro-inner { grid-template-columns: 1fr; gap: 40px; }
+  .pa-row { grid-template-columns: 1fr; }
+  .pa-row:nth-child(even) { direction: ltr; }
+  .pa-detail-body-inner { grid-template-columns: 1fr; }
+  .footer-inner { grid-template-columns: 1fr 1fr; }
+  .attorneys-grid { grid-template-columns: 1fr; max-width: 400px; }
+  .attorney-profile { grid-template-columns: 1fr; }
+  .attorney-profile-photo { margin: 0 auto; }
+}
+</style>
+</head>
+<body>
+<nav class="nav"><div class="nav-inner">
+  <a class="nav-logo" href="/"><span class="nav-logo-name">Myers &amp; Shah</span><span class="nav-logo-type">Attorneys at Law</span></a>
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li><a href="/practice-areas.html" class="active">Practice Areas</a></li>
+    <li><a href="/attorneys.html">Attorneys</a></li>
+    <li class="nav-phones">
+      <a href="tel:+17032890452">(703) 289-0452</a>
+      <span class="nav-phone-divider"></span>
+      <a href="tel:+12029887553">(202) 988-7553</a>
+    </li>
+    <li><a class="nav-cta" href="https://calendly.com/mmyers-myersshah" target="_blank">Contact Us</a></li>
+  </ul>
+</div></nav>
+
+
+<section class="pa-detail-hero" style="position:relative;overflow:hidden;background:var(--navy-deep);">
+  <div style="position:absolute;inset:0;z-index:0;">
+    <img src="images/practice-development.jpg" alt="Development and incentives" style="width:100%;height:100%;object-fit:cover;opacity:0.4;">
+    <div style="position:absolute;inset:0;background:linear-gradient(180deg, rgba(15,27,51,0.45) 0%, rgba(15,27,51,0.9) 100%);"></div>
+  </div>
+  <div class="pa-detail-hero-inner" style="position:relative;z-index:2;">
+    <div class="pa-detail-breadcrumb"><a href="/">Home</a> &nbsp;/&nbsp; <a href="/practice-areas.html">Practice Areas</a> &nbsp;/&nbsp; Development &amp; Tax Incentives</div>
+    <h1>Development &amp; Tax Incentives</h1>
+    <p>Structuring tax abatements, tax increment financing, and public-private financing tools that make difficult projects feasible — and finished projects profitable.</p>
+  </div>
+</section>
+
+<section class="pa-detail-body"><div class="pa-detail-body-inner">
+  <div class="pa-detail-main">
+    <h2>Where Tax Code Meets Development Pro Forma</h2>
+    <p>Most development incentive work sits at the seam between municipal finance, tax law, and project economics. We bring all three to the table: advanced tax training, prior modeling work on incentive revenue streams and assessed-value sensitivity projections, and a clear sense of how incentive structure flows through to the capital stack.</p>
+    <p>Our practice covers the full lifecycle: identifying applicable incentive programs, structuring agreements, negotiating with municipal counterparties, drafting transaction documents, and advising on compliance and reporting through the agreement's term.</p>
+    <h2>How We Help</h2>
+    <ul>
+      <li>Real property tax abatements and exemptions</li>
+      <li>Real property tax abatements and exemptions</li>
+      <li>Tax increment financing (TIF) structuring</li>
+      <li>New Markets Tax Credit (NMTC) transactions</li>
+      <li>Long-term tax exemption applications under state and local statutes</li>
+      <li>Development agreements and community benefits agreements</li>
+      <li>Public-private partnership (P3) structuring</li>
+      <li>Compliance counseling for incentive recipients</li>
+    </ul>
+    <h2>Why It Matters</h2>
+    <p>A well-structured incentive can shift a marginal project to feasibility — and a poorly structured one can leave value on the table or trigger years of dispute over assessed values, payment schedules, or eligibility. Getting the documents right at the front end protects the deal for its full term.</p>
+  </div>
+  <aside class="pa-detail-sidebar">
+    <div class="sidebar-card">
+      <h4>Modeling a Project?</h4>
+      <p>We can help benchmark which incentive programs apply and what they're realistically worth before assumptions get baked into the pro forma.</p>
+      <a class="hero-btn" href="https://calendly.com/mmyers-myersshah" target="_blank" style="font-size:11px;padding:12px 24px;">Schedule a Consultation</a>
+    </div>
+    <div class="sidebar-card" style="border-top-color:var(--navy);">
+      <h4>Related Practice Areas</h4>
+      <ul style="list-style:none;padding:0;margin:0;">
+        <li style="padding:8px 0;border-bottom:1px solid var(--warm-gray);"><a href="/zoning-and-entitlements.html" style="font-family:var(--sans);font-size:14px;color:var(--navy);text-decoration:none;">Zoning & Entitlements →</a></li>
+        <li style="padding:8px 0;border-bottom:1px solid var(--warm-gray);"><a href="/land-use-litigation.html" style="font-family:var(--sans);font-size:14px;color:var(--navy);text-decoration:none;">Land Use Litigation →</a></li>
+        <li style="padding:8px 0;border-bottom:1px solid var(--warm-gray);"><a href="/commercial-leasing.html" style="font-family:var(--sans);font-size:14px;color:var(--navy);text-decoration:none;">Commercial Leasing →</a></li>
+      </ul>
+    </div>
+  </aside>
+</div></section>
+<section class="cta-band"><h3>Have a Project in Mind?</h3><p>Schedule a consultation and we'll help identify the right approach for your situation.</p><a class="hero-btn" href="https://calendly.com/mmyers-myersshah" target="_blank">Contact Us</a></section>
+<footer class="footer"><div class="footer-inner">
+  <div class="footer-brand"><div class="nav-logo-name">Myers &amp; Shah</div><div class="nav-logo-type">Attorneys at Law</div><p>Washington, DC &amp; Virginia</p></div>
+  <div><h5>Real Estate &amp; Land Use</h5><ul>
+    <li><a href="/zoning-and-entitlements.html">Zoning &amp; Entitlements</a></li>
+    <li><a href="/development-incentives.html">Development &amp; Tax Incentives</a></li>
+    <li><a href="/land-use-litigation.html">Land Use Litigation</a></li>
+    <li><a href="/commercial-leasing.html">Commercial Leasing</a></li>
+  </ul></div>
+  <div><h5>Tax &amp; Estate</h5><ul>
+    <li><a href="/tax-planning.html">Tax Planning</a></li>
+    <li><a href="/trusts-and-estates.html">Trusts &amp; Estates</a></li>
+    <li><a href="/trust-and-estate-litigation.html">Estate Litigation</a></li>
+  </ul></div>
+  <div><h5>The Firm</h5><ul>
+    <li><a href="/attorneys.html">Our Attorneys</a></li>
+    <li><a href="https://calendly.com/mmyers-myersshah" target="_blank">Contact</a></li>
+  </ul></div>
+  <div><h5>Contact</h5><ul>
+    <li><a href="tel:+17032890452">(703) 289-0452</a></li>
+    <li><a href="tel:+12029887553">(202) 988-7553</a></li>
+    <li><a href="/cdn-cgi/l/email-protection#5c313125392e2f1c3125392e2f2f343d34723f3331"><span class="__cf_email__" data-cfemail="a7cacadec2d5d4e7cadec2d5d4d4cfc6cf89c4c8ca">[email&#160;protected]</span></a></li>
+  </ul></div>
+</div><div class="footer-bottom"><p>&copy; 2026 Myers &amp; Shah PLLC, Attorneys at Law. All rights reserved.</p><p>Prior results do not guarantee a similar outcome. The information on this website is for general informational purposes only and does not constitute legal advice.</p></div></footer>
+</body>
+</html>
