@@ -1,20 +1,23 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Practice Areas | Myers &amp; Shah — Attorneys at Law</title>
-<meta name="description" content="Comprehensive legal counsel in trusts & estates, tax planning, land use, and estate litigation.">
+<meta name="description" content="Real estate and land use counsel — zoning, entitlements, tax incentives, land use litigation, commercial leasing — plus tax and estate planning, in DC and Virginia.">
 <link rel="canonical" href="https://myersshah.com/">
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Fraunces:opsz,wght,SOFT@9..144,300..800,0..100&family=Source+Sans+3:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root {
   --navy: #1B2A4A; --navy-deep: #0F1B33; --navy-light: #2C3E66;
   --gold: #C5A55A; --gold-light: #D4BA7A; --gold-pale: #F5EFE0;
   --white: #FFFFFF; --off-white: #F8F6F1; --warm-gray: #E8E4DC;
   --text-dark: #2A2A2A; --text-medium: #5A5A5A; --text-light: #8A8A8A;
-  --serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --serif: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --nav-font: 'Space Grotesk', 'Helvetica Neue', Arial, sans-serif;
   --sans: 'Source Sans 3', 'Helvetica Neue', Arial, sans-serif;
+  --nav: 'Space Grotesk', 'Helvetica Neue', Arial, sans-serif;
 }
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: var(--sans); color: var(--text-dark); background: var(--white); -webkit-font-smoothing: antialiased; }
@@ -24,24 +27,27 @@ a { text-decoration: none; }
 .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: var(--navy-deep); border-bottom: 1px solid rgba(197,165,90,0.2); }
 .nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 40px; display: flex; align-items: center; justify-content: space-between; height: 80px; }
 .nav-logo { display: flex; flex-direction: column; text-decoration: none; }
-.nav-logo-name { font-family: 'DM Serif Display', serif; font-size: 26px; font-weight: 400; color: var(--white); letter-spacing: 1px; }
-.nav-logo-type { font-family: var(--sans); font-size: 10px; font-weight: 400; color: var(--gold); letter-spacing: 3px; text-transform: uppercase; margin-top: 2px; }
+.nav-logo-name { font-family: 'DM Serif Display', serif; font-size: 28px; font-weight: 400; color: var(--white); letter-spacing: 0.5px; }
+.nav-logo-type { font-family: var(--nav); font-size: 10px; font-weight: 500; color: var(--gold); letter-spacing: 3.5px; text-transform: uppercase; margin-top: 3px; }
 .nav-links { display: flex; gap: 32px; list-style: none; align-items: center; }
-.nav-links a { font-family: var(--sans); font-size: 13px; font-weight: 500; color: rgba(255,255,255,0.75); text-decoration: none; letter-spacing: 1px; text-transform: uppercase; transition: color 0.2s; }
+.nav-links a { font-family: var(--nav); font-size: 12px; font-weight: 500; color: rgba(255,255,255,0.8); text-decoration: none; letter-spacing: 1.2px; text-transform: uppercase; transition: color 0.2s; }
 .nav-links a:hover, .nav-links a.active { color: var(--gold); }
-.nav-cta { font-family: var(--sans); font-size: 12px; font-weight: 600; color: var(--navy-deep) !important; background: var(--gold); padding: 10px 24px; letter-spacing: 1.5px; text-transform: uppercase; text-decoration: none; transition: all 0.2s; }
+.nav-cta { font-family: var(--nav); font-size: 11px; font-weight: 600; color: var(--navy-deep) !important; background: var(--gold); padding: 11px 22px; letter-spacing: 1.8px; text-transform: uppercase; text-decoration: none; transition: all 0.2s; }
 .nav-cta:hover { background: var(--gold-light) !important; }
 .nav-phones { display: flex; gap: 16px; align-items: center; }
-.nav-phones a { font-family: var(--sans); font-size: 13px; font-weight: 500; color: rgba(255,255,255,0.85); text-decoration: none; transition: color 0.2s; }
+.nav-phones a { font-family: var(--nav); font-size: 13px; font-weight: 400; color: rgba(255,255,255,0.85); text-decoration: none; transition: color 0.2s; letter-spacing: 0.3px; }
 .nav-phones a:hover { color: var(--gold); }
 .nav-phone-divider { width: 1px; height: 16px; background: rgba(255,255,255,0.2); }
 
 /* SHARED ELEMENTS */
-.section-label { font-family: var(--sans); font-size: 11px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
-.section-title { font-family: var(--serif); font-size: 38px; font-weight: 500; color: var(--navy); margin-bottom: 16px; line-height: 1.2; }
-.section-subtitle { font-family: var(--sans); font-size: 17px; font-weight: 300; color: var(--text-medium); line-height: 1.7; max-width: 600px; margin-bottom: 60px; }
-.hero-btn { display: inline-block; font-family: var(--sans); font-size: 13px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; padding: 16px 40px; background: var(--gold); color: var(--navy-deep); text-decoration: none; transition: all 0.3s; }
-.hero-btn:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 8px 30px rgba(197,165,90,0.3); }
+.section-label { font-family: var(--sans); font-size: 11px; font-weight: 600; letter-spacing: 4px; text-transform: uppercase; color: var(--gold); margin-bottom: 24px; display: inline-flex; align-items: center; gap: 12px; }
+.section-label::before { content: ''; display: inline-block; width: 32px; height: 1px; background: var(--gold); }
+.section-title { font-family: var(--serif); font-size: 52px; font-weight: 400; color: var(--navy); margin-bottom: 20px; line-height: 1.05; letter-spacing: -0.02em; font-variation-settings: 'opsz' 100, 'SOFT' 30; }
+.section-subtitle { font-family: var(--sans); font-size: 19px; font-weight: 300; color: var(--text-medium); line-height: 1.65; max-width: 640px; margin-bottom: 72px; }
+.hero-btn { display: inline-flex; align-items: center; gap: 12px; font-family: var(--sans); font-size: 12px; font-weight: 600; letter-spacing: 2.5px; text-transform: uppercase; padding: 18px 36px; background: var(--gold); color: var(--navy-deep); text-decoration: none; transition: all 0.3s; position: relative; }
+.hero-btn::after { content: '→'; font-size: 16px; transition: transform 0.3s; }
+.hero-btn:hover::after { transform: translateX(4px); }
+.hero-btn:hover { background: var(--gold-light); box-shadow: 0 12px 40px rgba(197,165,90,0.35); }
 
 /* HERO */
 .hero { min-height: 100vh; background: linear-gradient(165deg, var(--navy-deep) 0%, var(--navy) 40%, var(--navy-light) 100%); display: flex; align-items: center; position: relative; overflow: hidden; padding-top: 80px; }
@@ -110,7 +116,7 @@ a { text-decoration: none; }
 
 /* FOOTER */
 .footer { background: var(--navy-deep); padding: 60px 40px 40px; }
-.footer-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 60px; }
+.footer-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr 1fr; gap: 40px; }
 .footer-brand .nav-logo-name { font-size: 22px; margin-bottom: 4px; }
 .footer-brand .nav-logo-type { margin-bottom: 20px; }
 .footer-brand p { font-family: var(--sans); font-size: 14px; font-weight: 300; color: rgba(255,255,255,0.5); line-height: 1.7; }
@@ -123,11 +129,14 @@ a { text-decoration: none; }
 .footer-bottom p { font-family: var(--sans); font-size: 12px; color: rgba(255,255,255,0.3); }
 
 /* PA OVERVIEW */
-.pa-overview-hero { min-height: 50vh; background: linear-gradient(165deg, var(--navy-deep) 0%, var(--navy) 60%, var(--navy-light) 100%); display: flex; align-items: flex-end; padding: 120px 40px 80px; position: relative; }
-.pa-overview-hero::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, var(--gold), transparent); opacity: 0.3; }
-.pa-overview-hero-inner { max-width: 1200px; margin: 0 auto; width: 100%; }
-.pa-overview-hero h1 { font-family: var(--serif); font-size: 48px; font-weight: 500; color: var(--white); margin-bottom: 16px; }
-.pa-overview-hero p { font-family: var(--sans); font-size: 18px; font-weight: 300; color: rgba(255,255,255,0.65); max-width: 640px; line-height: 1.7; }
+.pa-overview-hero { min-height: 60vh; background: var(--navy-deep); display: flex; align-items: flex-end; padding: 120px 40px 80px; position: relative; overflow: hidden; }
+.pa-overview-hero-bg { position: absolute; inset: 0; z-index: 0; }
+.pa-overview-hero-bg img { width: 100%; height: 100%; object-fit: cover; opacity: 0.45; }
+.pa-overview-hero-bg::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(15,27,51,0.4) 0%, rgba(15,27,51,0.85) 100%); }
+.pa-overview-hero::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, var(--gold), transparent); opacity: 0.3; z-index: 2; }
+.pa-overview-hero-inner { max-width: 1200px; margin: 0 auto; width: 100%; position: relative; z-index: 2; }
+.pa-overview-hero h1 { font-family: var(--serif); font-size: 72px; font-weight: 400; color: var(--white); margin-bottom: 20px; line-height: 1.02; letter-spacing: -0.03em; font-variation-settings: 'opsz' 144, 'SOFT' 30; }
+.pa-overview-hero p { font-family: var(--sans); font-size: 19px; font-weight: 300; color: rgba(255,255,255,0.85); max-width: 640px; line-height: 1.65; }
 .pa-overview-body { padding: 80px 40px; background: var(--off-white); }
 .pa-overview-body-inner { max-width: 1200px; margin: 0 auto; }
 .pa-row { display: grid; grid-template-columns: 1fr 1fr; background: var(--white); margin-bottom: 2px; transition: all 0.35s; overflow: hidden; }
@@ -135,8 +144,8 @@ a { text-decoration: none; }
 .pa-row:hover { box-shadow: 0 8px 40px rgba(27,42,74,0.1); transform: translateY(-2px); }
 .pa-row-accent { background: var(--navy); display: flex; align-items: center; justify-content: center; padding: 60px 48px; position: relative; overflow: hidden; }
 .pa-row-accent::before { content: ''; position: absolute; inset: 0; background-image: linear-gradient(rgba(197,165,90,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(197,165,90,0.05) 1px, transparent 1px); background-size: 30px 30px; }
-.pa-row:nth-child(even) { direction: rtl; }
-.pa-row:nth-child(even) > * { direction: ltr; }
+.pa-row:nth-of-type(even) { direction: rtl; }
+.pa-row:nth-of-type(even) > * { direction: ltr; }
 .pa-row-accent-content { text-align: center; position: relative; }
 .pa-row-accent-icon { font-size: 48px; margin-bottom: 16px; display: block; }
 .pa-row-accent-title { font-family: var(--serif); font-size: 26px; font-weight: 500; color: var(--white); }
@@ -147,18 +156,23 @@ a { text-decoration: none; }
 .pa-row-tag { font-family: var(--sans); font-size: 12px; font-weight: 500; color: var(--navy); background: var(--gold-pale); padding: 6px 14px; }
 .pa-row-link { display: inline-flex; align-items: center; gap: 8px; margin-top: 20px; font-family: var(--sans); font-size: 13px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); text-decoration: none; transition: gap 0.2s; }
 .pa-row-link:hover { gap: 14px; }
+.pa-category-heading { margin: 20px 0 24px; padding-bottom: 14px; border-bottom: 2px solid var(--gold); }
+.pa-category-heading:first-child { margin-top: 0; }
+.pa-category-heading.secondary { margin-top: 60px; border-bottom-color: var(--warm-gray); }
+.pa-category-heading h2 { font-family: var(--serif); font-size: 26px; font-weight: 500; color: var(--navy); margin-bottom: 6px; }
+.pa-category-heading p { font-family: var(--sans); font-size: 14px; font-weight: 300; color: var(--text-medium); }
 
 /* PA DETAIL */
-.pa-detail-hero { min-height: 45vh; background: linear-gradient(165deg, var(--navy-deep) 0%, var(--navy) 100%); display: flex; align-items: flex-end; padding: 120px 40px 70px; position: relative; }
+.pa-detail-hero { min-height: 55vh; background: linear-gradient(165deg, var(--navy-deep) 0%, var(--navy) 100%); display: flex; align-items: flex-end; padding: 140px 40px 80px; position: relative; }
 .pa-detail-hero::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, var(--gold), transparent); opacity: 0.3; }
 .pa-detail-hero-inner { max-width: 1200px; margin: 0 auto; width: 100%; }
 .pa-detail-breadcrumb { font-family: var(--sans); font-size: 12px; color: rgba(255,255,255,0.4); letter-spacing: 1px; margin-bottom: 20px; }
 .pa-detail-breadcrumb a { color: var(--gold); text-decoration: none; }
-.pa-detail-hero h1 { font-family: var(--serif); font-size: 44px; font-weight: 500; color: var(--white); margin-bottom: 16px; }
-.pa-detail-hero p { font-family: var(--sans); font-size: 18px; font-weight: 300; color: rgba(255,255,255,0.6); max-width: 640px; line-height: 1.7; }
+.pa-detail-hero h1 { font-family: var(--serif); font-size: 64px; font-weight: 400; color: var(--white); margin-bottom: 20px; line-height: 1.03; letter-spacing: -0.03em; font-variation-settings: 'opsz' 144, 'SOFT' 30; }
+.pa-detail-hero p { font-family: var(--sans); font-size: 19px; font-weight: 300; color: rgba(255,255,255,0.85); max-width: 680px; line-height: 1.65; }
 .pa-detail-body { padding: 80px 40px; background: var(--white); }
 .pa-detail-body-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr; gap: 80px; }
-.pa-detail-main h2 { font-family: var(--serif); font-size: 28px; font-weight: 500; color: var(--navy); margin-bottom: 20px; margin-top: 48px; }
+.pa-detail-main h2 { font-family: var(--serif); font-size: 34px; font-weight: 400; color: var(--navy); margin-bottom: 24px; margin-top: 56px; line-height: 1.15; letter-spacing: -0.015em; font-variation-settings: 'opsz' 100, 'SOFT' 30; }
 .pa-detail-main h2:first-child { margin-top: 0; }
 .pa-detail-main p { font-family: var(--sans); font-size: 16px; font-weight: 300; color: var(--text-medium); line-height: 1.85; margin-bottom: 16px; }
 .pa-detail-main ul { list-style: none; margin: 16px 0 24px; }
@@ -223,21 +237,34 @@ a { text-decoration: none; }
   </ul>
 </div></nav>
 
-<section class="pa-overview-hero"><div class="pa-overview-hero-inner"><div class="section-label" style="color:var(--gold)">What We Do</div><h1>Practice Areas</h1><p>From planning for the future to resolving complex disputes, our practice is built around the legal needs that matter most to DC-area families and individuals.</p></div></section>
+<section class="pa-overview-hero">
+<div class="pa-overview-hero-bg"><img src="images/page-hero-practice.jpg" alt="DC architecture and urban design"></div>
+<div class="pa-overview-hero-inner"><div class="section-label" style="color:var(--gold)">What We Do</div><h1>Practice Areas</h1><p>A real estate and land use practice anchored in zoning, entitlements, development incentives, and litigation — with complementary tax and estate planning capabilities for clients across DC and Virginia.</p></div></section>
 <section class="pa-overview-body"><div class="pa-overview-body-inner">
-  <a class="pa-row" href="/trusts-and-estates.html"><div class="pa-row-accent"><div class="pa-row-accent-content"><span class="pa-row-accent-icon">⚖️</span><div class="pa-row-accent-title">Trusts &amp; Estates</div></div></div><div class="pa-row-text"><h3>Thoughtful Plans for Lasting Peace of Mind</h3><p>We help individuals and families create comprehensive estate plans that protect assets, minimize tax exposure, and ensure your wishes are carried out.</p><div class="pa-row-services"><span class="pa-row-tag">Wills</span><span class="pa-row-tag">Revocable Trusts</span><span class="pa-row-tag">Irrevocable Trusts</span><span class="pa-row-tag">Probate</span><span class="pa-row-tag">Estate Administration</span><span class="pa-row-tag">Powers of Attorney</span></div><span class="pa-row-link">Learn More →</span></div></a>
-  <a class="pa-row" href="/tax-planning.html"><div class="pa-row-accent"><div class="pa-row-accent-content"><span class="pa-row-accent-icon">📊</span><div class="pa-row-accent-title">Tax Planning</div></div></div><div class="pa-row-text"><h3>Strategies to Preserve and Grow Your Wealth</h3><p>Guided by an LL.M. in Taxation from Georgetown, we provide proactive tax planning for individuals, families, and small business owners.</p><div class="pa-row-services"><span class="pa-row-tag">Gift Tax Strategy</span><span class="pa-row-tag">Estate Tax Minimization</span><span class="pa-row-tag">Income Tax Planning</span><span class="pa-row-tag">Business Entity Structuring</span><span class="pa-row-tag">Charitable Giving</span></div><span class="pa-row-link">Learn More →</span></div></a>
-  <a class="pa-row" href="/land-use-and-zoning.html"><div class="pa-row-accent"><div class="pa-row-accent-content"><span class="pa-row-accent-icon">📐</span><div class="pa-row-accent-title">Land Use &amp; Zoning</div></div></div><div class="pa-row-text"><h3>Navigating Approvals for Your Property Vision</h3><p>We represent property owners, developers, and businesses before local zoning boards, planning commissions, and government agencies.</p><div class="pa-row-services"><span class="pa-row-tag">Zoning Variances</span><span class="pa-row-tag">Special Exceptions</span><span class="pa-row-tag">Site Plan Review</span><span class="pa-row-tag">Comprehensive Planning</span><span class="pa-row-tag">Government Permitting</span></div><span class="pa-row-link">Learn More →</span></div></a>
+  <div class="pa-category-heading"><h2>Real Estate &amp; Land Use</h2><p>Our primary focus — counsel for developers, owners, and businesses across DC and Virginia.</p></div>
+  <a class="pa-row" href="/zoning-and-entitlements.html"><div class="pa-row-accent"><div class="pa-row-accent-content"><span class="pa-row-accent-icon">📐</span><div class="pa-row-accent-title">Zoning &amp; Entitlements</div></div></div><div class="pa-row-text"><h3>Approvals That Make Projects Possible</h3><p>We represent applicants and opponents before zoning boards, planning commissions, and BZAs in DC and Virginia jurisdictions, guiding projects from initial feasibility through final approval.</p><div class="pa-row-services"><span class="pa-row-tag">Variances</span><span class="pa-row-tag">Special Exceptions</span><span class="pa-row-tag">PUDs</span><span class="pa-row-tag">Site Plan Review</span><span class="pa-row-tag">Comprehensive Plan Amendments</span><span class="pa-row-tag">BZA &amp; BOCA Hearings</span></div><span class="pa-row-link">Learn More →</span></div></a>
+  <a class="pa-row" href="/development-incentives.html"><div class="pa-row-accent"><div class="pa-row-accent-content"><span class="pa-row-accent-icon">🏗️</span><div class="pa-row-accent-title">Development &amp; Tax Incentives</div></div></div><div class="pa-row-text"><h3>Structuring Deals That Pencil Out</h3><p>Drawing on advanced tax training and prior incentive modeling work, we negotiate and structure development incentives, abatements, and public-private financing arrangements that make difficult projects feasible.</p><div class="pa-row-services"><span class="pa-row-tag">Tax Abatements</span><span class="pa-row-tag">Tax Increment Financing</span><span class="pa-row-tag">Long-Term Tax Exemptions</span><span class="pa-row-tag">Development Agreements</span><span class="pa-row-tag">Public-Private Partnerships</span></div><span class="pa-row-link">Learn More →</span></div></a>
+  <a class="pa-row" href="/land-use-litigation.html"><div class="pa-row-accent"><div class="pa-row-accent-content"><span class="pa-row-accent-icon">⚖️</span><div class="pa-row-accent-title">Land Use Litigation</div></div></div><div class="pa-row-text"><h3>Defending Approvals, Challenging Denials</h3><p>When zoning decisions are contested or development rights are at stake, we bring multi-forum litigation experience to administrative appeals, takings claims, and disputes between neighbors, developers, and government bodies.</p><div class="pa-row-services"><span class="pa-row-tag">Zoning Appeals</span><span class="pa-row-tag">Takings &amp; Inverse Condemnation</span><span class="pa-row-tag">Administrative Review</span><span class="pa-row-tag">Neighbor Disputes</span><span class="pa-row-tag">Restrictive Covenant Litigation</span></div><span class="pa-row-link">Learn More →</span></div></a>
+  <a class="pa-row" href="/commercial-leasing.html"><div class="pa-row-accent"><div class="pa-row-accent-content"><span class="pa-row-accent-icon">🔑</span><div class="pa-row-accent-title">Commercial Leasing</div></div></div><div class="pa-row-text"><h3>Leases That Protect the Long View</h3><p>We negotiate, draft, and enforce commercial leases for landlords and tenants across retail, office, industrial, and mixed-use properties — and step in when disputes arise mid-term or at renewal.</p><div class="pa-row-services"><span class="pa-row-tag">Lease Negotiation</span><span class="pa-row-tag">Build-Out &amp; TI Provisions</span><span class="pa-row-tag">Renewals &amp; Extensions</span><span class="pa-row-tag">Default &amp; Eviction</span><span class="pa-row-tag">Subleasing &amp; Assignment</span><span class="pa-row-tag">Lease Disputes</span></div><span class="pa-row-link">Learn More →</span></div></a>
+
+  <div class="pa-category-heading secondary"><h2>Tax &amp; Estate Planning</h2><p>Complementary services for individuals, families, and closely held businesses.</p></div>
+  <a class="pa-row" href="/tax-planning.html"><div class="pa-row-accent"><div class="pa-row-accent-content"><span class="pa-row-accent-icon">📊</span><div class="pa-row-accent-title">Tax Planning</div></div></div><div class="pa-row-text"><h3>Strategies to Preserve and Grow Your Wealth</h3><p>Proactive tax planning and controversy representation for individuals, families, and small business owners.</p><div class="pa-row-services"><span class="pa-row-tag">Gift Tax Strategy</span><span class="pa-row-tag">Estate Tax Minimization</span><span class="pa-row-tag">Income Tax Planning</span><span class="pa-row-tag">Entity Structuring</span><span class="pa-row-tag">IRS Controversy</span></div><span class="pa-row-link">Learn More →</span></div></a>
+  <a class="pa-row" href="/trusts-and-estates.html"><div class="pa-row-accent"><div class="pa-row-accent-content"><span class="pa-row-accent-icon">📜</span><div class="pa-row-accent-title">Trusts &amp; Estates</div></div></div><div class="pa-row-text"><h3>Thoughtful Plans for Lasting Peace of Mind</h3><p>We help individuals and families create comprehensive estate plans that protect assets, minimize tax exposure, and ensure your wishes are carried out.</p><div class="pa-row-services"><span class="pa-row-tag">Wills</span><span class="pa-row-tag">Revocable Trusts</span><span class="pa-row-tag">Irrevocable Trusts</span><span class="pa-row-tag">Probate</span><span class="pa-row-tag">Estate Administration</span><span class="pa-row-tag">Powers of Attorney</span></div><span class="pa-row-link">Learn More →</span></div></a>
   <a class="pa-row" href="/trust-and-estate-litigation.html"><div class="pa-row-accent"><div class="pa-row-accent-content"><span class="pa-row-accent-icon">🔍</span><div class="pa-row-accent-title">Estate Litigation</div></div></div><div class="pa-row-text"><h3>Resolving Disputes With Skill and Determination</h3><p>When estate and trust matters become contested, we bring deep litigation experience to will contests, fiduciary breach claims, and trust disputes.</p><div class="pa-row-services"><span class="pa-row-tag">Will Contests</span><span class="pa-row-tag">Trust Disputes</span><span class="pa-row-tag">Fiduciary Litigation</span><span class="pa-row-tag">Contested Accountings</span><span class="pa-row-tag">Undue Influence Claims</span></div><span class="pa-row-link">Learn More →</span></div></a>
 </div></section>
-<section class="cta-band"><h3>Not Sure Where to Start?</h3><p>Schedule a consultation and we'll help identify the right approach for your situation.</p><a class="hero-btn" href="https://calendly.com/mmyers-myersshah" target="_blank">Contact Us</a></section>
+<section class="cta-band"><h3>Have a Project in Mind?</h3><p>Schedule a consultation and we'll help identify the right approach for your situation.</p><a class="hero-btn" href="https://calendly.com/mmyers-myersshah" target="_blank">Contact Us</a></section>
 <footer class="footer"><div class="footer-inner">
   <div class="footer-brand"><div class="nav-logo-name">Myers &amp; Shah</div><div class="nav-logo-type">Attorneys at Law</div><p>Washington, DC &amp; Virginia</p></div>
-  <div><h5>Practice Areas</h5><ul>
-    <li><a href="/trusts-and-estates.html">Trusts &amp; Estates</a></li>
+  <div><h5>Real Estate &amp; Land Use</h5><ul>
+    <li><a href="/zoning-and-entitlements.html">Zoning &amp; Entitlements</a></li>
+    <li><a href="/development-incentives.html">Development &amp; Tax Incentives</a></li>
+    <li><a href="/land-use-litigation.html">Land Use Litigation</a></li>
+    <li><a href="/commercial-leasing.html">Commercial Leasing</a></li>
+  </ul></div>
+  <div><h5>Tax &amp; Estate</h5><ul>
     <li><a href="/tax-planning.html">Tax Planning</a></li>
-    <li><a href="/land-use-and-zoning.html">Land Use &amp; Zoning</a></li>
-    <li><a href="/trust-and-estate-litigation.html">Trust &amp; Estate Litigation</a></li>
+    <li><a href="/trusts-and-estates.html">Trusts &amp; Estates</a></li>
+    <li><a href="/trust-and-estate-litigation.html">Estate Litigation</a></li>
   </ul></div>
   <div><h5>The Firm</h5><ul>
     <li><a href="/attorneys.html">Our Attorneys</a></li>
@@ -248,4 +275,6 @@ a { text-decoration: none; }
     <li><a href="tel:+12029887553">(202) 988-7553</a></li>
     <li><a href="/cdn-cgi/l/email-protection#5c313125392e2f1c3125392e2f2f343d34723f3331"><span class="__cf_email__" data-cfemail="a7cacadec2d5d4e7cadec2d5d4d4cfc6cf89c4c8ca">[email&#160;protected]</span></a></li>
   </ul></div>
-</div><div class="footer-bottom"><p>&copy; 2026 Myers &amp; Shah PL
+</div><div class="footer-bottom"><p>&copy; 2026 Myers &amp; Shah PLLC, Attorneys at Law. All rights reserved.</p><p>Prior results do not guarantee a similar outcome. The information on this website is for general informational purposes only and does not constitute legal advice.</p></div></footer>
+</body>
+</html>
