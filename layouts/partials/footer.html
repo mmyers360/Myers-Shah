@@ -1,0 +1,27 @@
+<footer class="footer">
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <div class="footer-logo-name">Myers &amp; Shah</div>
+            <div class="footer-logo-type">{{ .Site.Params.firmTagline }}</div>
+        </div>
+        <div class="footer-cols">
+            <div class="footer-col">
+                <h4>Practice Areas</h4>
+                <a href="/practice-areas/">Zoning &amp; Entitlements</a>
+                <a href="/practice-areas/">Development &amp; Tax Incentives</a>
+                <a href="/practice-areas/">Land Use Litigation</a>
+                <a href="/practice-areas/">Commercial Leasing</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>{{ .Site.Params.address }}</p>
+                <a href="tel:{{ .Site.Params.phone1 }}">{{ .Site.Params.phone1 }}</a>
+                <a href="tel:{{ .Site.Params.phone2 }}">{{ .Site.Params.phone2 }}</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; {{ now.Year }} {{ .Site.Params.firmName }} PLLC. All rights reserved.</p>
+            <p class="footer-disclaimer">This website is for informational purposes only and does not constitute legal advice. Attorney advertising.</p>
+        </div>
+    </div>
+</footer>

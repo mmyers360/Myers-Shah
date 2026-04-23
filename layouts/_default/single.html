@@ -1,0 +1,50 @@
+{{ define "head" }}
+<meta property="og:title" content="{{ .Title }}">
+<meta property="og:description" content="{{ with .Params.summary }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<meta property="og:type" content="article">
+<meta property="og:url" content="{{ .Permalink }}">
+{{ end }}
+
+{{ define "main" }}
+<section class="page-hero page-hero--narrow">
+    <div class="page-hero-inner">
+        <div class="blog-post-meta">
+            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+            {{ with .Params.category }}<span class="blog-card-category">{{ . }}</span>{{ end }}
+        </div>
+        <h1>{{ .Title }}</h1>
+        {{ with .Params.author }}<p class="blog-post-author">By {{ . }}</p>{{ end }}
+    </div>
+</section>
+
+<article class="blog-post">
+    <div class="blog-post-inner">
+        <div class="blog-post-content">
+            {{ .Content }}
+        </div>
+
+        {{ with .Params.tags }}
+        <div class="blog-post-tags">
+            {{ range . }}
+            <span class="tag">{{ . }}</span>
+            {{ end }}
+        </div>
+        {{ end }}
+
+        <div class="blog-post-cta">
+            <h3>Need Help With a Zoning or Land Use Matter?</h3>
+            <p>Myers &amp; Shah represents property owners, developers, and businesses in zoning, entitlements, land use litigation, and commercial leasing across the District of Columbia and Virginia.</p>
+            <a href="{{ .Site.Params.calendlyURL }}" class="btn-cta" target="_blank" rel="noopener">Schedule a Consultation</a>
+        </div>
+
+        <div class="blog-post-nav">
+            {{ with .PrevInSection }}
+            <a href="{{ .RelPermalink }}" class="blog-nav-prev">&larr; {{ .Title }}</a>
+            {{ end }}
+            {{ with .NextInSection }}
+            <a href="{{ .RelPermalink }}" class="blog-nav-next">{{ .Title }} &rarr;</a>
+            {{ end }}
+        </div>
+    </div>
+</article>
+{{ end }}

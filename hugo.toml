@@ -1,0 +1,44 @@
+baseURL = "https://myersshah.com/"
+languageCode = "en-us"
+title = "Myers & Shah PLLC"
+theme = ""
+
+[params]
+  description = "Insights on real estate, land use, and zoning law in the District of Columbia and Virginia."
+  firmName = "Myers & Shah"
+  firmTagline = "Attorneys at Law"
+  phone1 = "703-289-0452"
+  phone2 = "202-600-5068"
+  address = "601 Pennsylvania Ave. NW, Suite 901, Washington, DC 20004"
+  calendlyURL = "https://calendly.com/mmyers-myersshah"
+
+[params.nav]
+  [[params.nav.items]]
+    name = "Home"
+    url = "/"
+  [[params.nav.items]]
+    name = "Practice Areas"
+    url = "/practice-areas/"
+  [[params.nav.items]]
+    name = "Attorneys"
+    url = "/attorneys/"
+  [[params.nav.items]]
+    name = "Insights"
+    url = "/posts/"
+  [[params.nav.items]]
+    name = "Contact"
+    url = "/contact/"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    style = "monokai"
+
+[outputs]
+  home = ["HTML"]
+  section = ["HTML"]
+
+[permalinks]
+  posts = "/insights/:slug/"

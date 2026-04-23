@@ -1,0 +1,26 @@
+<nav class="nav">
+    <div class="nav-inner">
+        <a href="/" class="nav-logo">
+            <span class="nav-logo-name">Myers &amp; Shah</span>
+            <span class="nav-logo-type">{{ .Site.Params.firmTagline }}</span>
+        </a>
+        <ul class="nav-links">
+            {{ range .Site.Params.nav.items }}
+            <li><a href="{{ .url }}"{{ if eq $.RelPermalink .url }} class="active"{{ end }}>{{ .name }}</a></li>
+            {{ end }}
+        </ul>
+        <div class="nav-right">
+            <div class="nav-phones">
+                <a href="tel:{{ .Site.Params.phone1 }}">{{ .Site.Params.phone1 }}</a>
+                <span class="phone-divider">|</span>
+                <a href="tel:{{ .Site.Params.phone2 }}">{{ .Site.Params.phone2 }}</a>
+            </div>
+            <a href="{{ .Site.Params.calendlyURL }}" class="nav-cta" target="_blank" rel="noopener">Schedule a Consultation</a>
+        </div>
+
+        <!-- Mobile hamburger -->
+        <button class="nav-hamburger" aria-label="Toggle menu" onclick="document.querySelector('.nav').classList.toggle('nav-open')">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
