@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zoning &amp; Entitlements | Myers &amp; Shah — Attorneys at Law</title>
+  <meta name="description" content="DC zoning attorney for homeowners and property owners. Variances, special exceptions, BZA hearings, ADU approvals, and historic preservation review in Washington, DC and Virginia.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Fraunces:opsz,wght,SOFT@9..144,300..800,0..100&family=Source+Sans+3:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #1B2A4A; --navy-deep: #0F1B33; --navy-light: #2C3E66;
+      --gold: #C5A55A; --gold-light: #D4BA7A; --gold-pale: #F5EFE0;
+      --white: #FFFFFF; --off-white: #F8F6F1; --warm-gray: #E8E4DC;
+      --text-dark: #2A2A2A; --text-medium: #5A5A5A; --text-light: #8A8A8A;
+      --serif: 'Fraunces', Georgia, 'Times New Roman', serif;
+      --nav-font: 'Space Grotesk', 'Helvetica Neue', Arial, sans-serif;
+      --sans: 'Source Sans 3', 'Helvetica Neue', Arial, sans-serif;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: var(--sans); color: var(--text-dark); background: var(--white); -webkit-font-smoothing: antialiased; }
+    a { text-decoration: none; }
+
+    /* NAV */
+    .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: var(--navy-deep); border-bottom: 1px solid rgba(197,165,90,0.2); }
+    .nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 40px; display: flex; align-items: center; justify-content: space-between; height: 80px; }
+    .nav-logo { display: flex; flex-direction: column; text-decoration: none; }
+    .nav-logo-name { font-family: 'DM Serif Display', serif; font-size: 28px; font-weight: 400; color: var(--white); letter-spacing: 0.5px; }
+    .nav-logo-type { font-family: var(--sans); font-size: 10px; font-weight: 400; color: var(--gold); letter-spacing: 3px; text-transform: uppercase; margin-top: 2px; }
+    .nav-links { display: flex; gap: 32px; list-style: none; align-items: center; }
+    .nav-links a { font-family: var(--nav-font); font-size: 13px; font-weight: 500; color: rgba(255,255,255,0.75); text-decoration: none; letter-spacing: 1px; text-transform: uppercase; transition: color 0.2s; }
+    .nav-links a:hover, .nav-links a.active { color: var(--gold); }
+    .nav-cta { font-family: var(--nav-font); font-size: 12px; font-weight: 600; color: var(--navy-deep) !important; background: var(--gold); padding: 10px 24px; letter-spacing: 1.5px; text-transform: uppercase; text-decoration: none; transition: all 0.2s; }
+    .nav-cta:hover { background: var(--gold-light) !important; }
+    .nav-phones { display: flex; gap: 16px; align-items: center; }
+    .nav-phones a { font-family: var(--nav-font); font-size: 12px; color: rgba(255,255,255,0.5); text-decoration: none; letter-spacing: 0.5px; }
+    .nav-phones a:hover { color: var(--gold); }
+
+    /* PA DETAIL HERO */
+    .pa-detail-hero { background: linear-gradient(165deg, var(--navy-deep) 0%, var(--navy) 100%); display: flex; align-items: flex-end; padding: 120px 40px 70px; position: relative; }
+    .pa-detail-hero::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, var(--gold), transparent); opacity: 0.3; }
+    .pa-detail-hero-inner { max-width: 1200px; margin: 0 auto; width: 100%; }
+    .pa-detail-breadcrumb { font-family: var(--sans); font-size: 12px; color: rgba(255,255,255,0.4); letter-spacing: 1px; margin-bottom: 20px; }
+    .pa-detail-breadcrumb a { color: var(--gold); text-decoration: none; }
+    .pa-detail-hero h1 { font-family: var(--serif); font-size: 44px; font-weight: 500; color: var(--white); margin-bottom: 16px; }
+    .pa-detail-hero p { font-family: var(--sans); font-size: 18px; font-weight: 300; color: rgba(255,255,255,0.6); max-width: 640px; line-height: 1.7; }
+
+    /* PA DETAIL BODY */
+    .pa-detail-body { padding: 80px 40px; background: var(--white); }
+    .pa-detail-body-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr; gap: 80px; }
+    .pa-detail-main h2 { font-family: var(--serif); font-size: 28px; font-weight: 500; color: var(--navy); margin-bottom: 20px; margin-top: 48px; }
+    .pa-detail-main h2:first-child { margin-top: 0; }
+    .pa-detail-main p { font-family: var(--sans); font-size: 16px; font-weight: 300; color: var(--text-medium); line-height: 1.85; margin-bottom: 16px; }
+    .pa-detail-main ul { list-style: none; margin: 16px 0 24px; }
+    .pa-detail-main ul li { font-family: var(--sans); font-size: 15px; font-weight: 400; color: var(--text-dark); padding: 10px 0 10px 24px; border-bottom: 1px solid var(--warm-gray); position: relative; }
+    .pa-detail-main ul li::before { content: ''; position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 8px; height: 2px; background: var(--gold); }
+
+    /* SIDEBAR */
+    .pa-detail-sidebar { position: sticky; top: 110px; align-self: start; }
+    .sidebar-card { background: var(--off-white); padding: 36px; margin-bottom: 24px; border-top: 3px solid var(--gold); }
+    .sidebar-card h4 { font-family: var(--serif); font-size: 18px; font-weight: 600; color: var(--navy); margin-bottom: 16px; }
+    .sidebar-card p { font-family: var(--sans); font-size: 14px; font-weight: 300; color: var(--text-medium); line-height: 1.7; margin-bottom: 20px; }
+    .sidebar-btn { display: block; text-align: center; font-family: var(--sans); font-size: 12px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; padding: 14px 24px; color: var(--navy-deep); background: var(--gold); text-decoration: none; transition: all 0.2s; }
+    .sidebar-btn:hover { background: var(--gold-light); }
+    .sidebar-related { background: var(--off-white); padding: 36px; }
+    .sidebar-related h4 { font-family: var(--serif); font-size: 16px; font-weight: 600; color: var(--navy); margin-bottom: 16px; }
+    .sidebar-related a { display: block; font-family: var(--sans); font-size: 14px; font-weight: 500; color: var(--gold); padding: 8px 0; text-decoration: none; transition: color 0.2s; }
+    .sidebar-related a:hover { color: var(--navy); }
+
+    /* BOTTOM CTA BAND */
+    .pa-bottom-cta { background: var(--navy-deep); padding: 60px 40px; text-align: center; }
+    .pa-bottom-cta h3 { font-family: var(--serif); font-size: 28px; font-weight: 500; color: var(--white); margin-bottom: 24px; }
+    .pa-bottom-cta p { font-family: var(--sans); font-size: 15px; font-weight: 300; color: rgba(255,255,255,0.5); margin-bottom: 32px; }
+    .pa-bottom-cta .cta-btn { display: inline-block; font-family: var(--sans); font-size: 12px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; padding: 14px 40px; color: var(--navy-deep); background: var(--gold); text-decoration: none; transition: all 0.2s; }
+    .pa-bottom-cta .cta-btn:hover { background: var(--gold-light); }
+
+    /* FOOTER */
+    .footer { background: var(--navy-deep); padding: 60px 40px 30px; border-top: 1px solid rgba(197,165,90,0.15); }
+    .footer-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1.5fr repeat(4, 1fr); gap: 40px; }
+    .footer-brand .nav-logo-name { font-size: 22px; }
+    .footer-brand .nav-logo-type { margin-bottom: 12px; }
+    .footer-brand p { font-family: var(--sans); font-size: 13px; color: rgba(255,255,255,0.35); line-height: 1.6; }
+    .footer-col h5 { font-family: var(--sans); font-size: 11px; font-weight: 600; color: var(--gold); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 16px; }
+    .footer-col ul { list-style: none; }
+    .footer-col ul li { margin-bottom: 8px; }
+    .footer-col ul li a { font-family: var(--sans); font-size: 13px; color: rgba(255,255,255,0.5); text-decoration: none; transition: color 0.2s; }
+    .footer-col ul li a:hover { color: var(--gold); }
+    .footer-bottom { max-width: 1200px; margin: 40px auto 0; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.06); }
+    .footer-bottom p { font-family: var(--sans); font-size: 11px; color: rgba(255,255,255,0.25); line-height: 1.6; }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .nav-links { display: none; }
+      .nav-phones { display: none; }
+      .pa-detail-hero h1 { font-size: 32px; }
+      .pa-detail-body-inner { grid-template-columns: 1fr; gap: 40px; }
+      .pa-detail-sidebar { position: static; }
+      .footer-inner { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 600px) {
+      .pa-detail-hero { padding: 100px 20px 50px; }
+      .pa-detail-body { padding: 50px 20px; }
+      .footer-inner { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">
+        <span class="nav-logo-name">Myers &amp; Shah</span>
+        <span class="nav-logo-type">Attorneys at Law</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/practice-areas" class="active">Practice Areas</a></li>
+        <li><a href="/attorneys">Attorneys</a></li>
+        <li><a href="/posts/">Insights</a></li>
+        <li class="nav-phones">
+          <a href="tel:+17032890452">(703) 289-0452</a>
+          <a href="tel:+12029887553">(202) 988-7553</a>
+        </li>
+        <li><a href="https://calendly.com/mmyers-myersshah" class="nav-cta">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="pa-detail-hero">
+    <div class="pa-detail-hero-inner">
+      <div class="pa-detail-breadcrumb"><a href="/practice-areas">Practice Areas</a>&nbsp; /&nbsp; Zoning &amp; Entitlements</div>
+      <h1>Zoning &amp; Entitlements</h1>
+      <p>Variances, special exceptions, and zoning approvals for homeowners, property owners, and developers in Washington, DC and Virginia.</p>
+    </div>
+  </section>
+
+  <!-- BODY -->
+  <section class="pa-detail-body">
+    <div class="pa-detail-body-inner">
+      <div class="pa-detail-main">
+
+        <h2>Zoning Approvals for Homeowners, Property Owners, and Developers</h2>
+        <p>Whether you're a homeowner planning an addition, a small investor converting a property, or a developer pursuing a larger project, zoning and entitlement work is often the first — and most consequential — step. At Myers &amp; Shah, we guide clients through the full regulatory approval process in the District of Columbia and Virginia, from initial feasibility analysis through final board approval.</p>
+        <p>We represent both applicants seeking approvals and property owners opposing projects that threaten their neighborhoods. Our attorneys appear regularly before zoning boards, planning commissions, historic preservation review boards, and advisory neighborhood commissions across the region.</p>
+
+        <h2>What We Help With</h2>
+        <ul>
+          <li>Area and Use Variances Before the DC Board of Zoning Adjustment (BZA)</li>
+          <li>Special Exceptions for Home Additions, Conversions, and Accessory Dwelling Units</li>
+          <li>Planned Unit Developments (PUDs) and Map Amendments</li>
+          <li>Site Plan Approvals in Northern Virginia Jurisdictions</li>
+          <li>Comprehensive Plan and Future Land Use Map Amendments</li>
+          <li>Historic Preservation Review Board (HPRB) Applications</li>
+          <li>Advisory Neighborhood Commission (ANC) Presentations and Coordination</li>
+          <li>Zoning Self-Certification (BZA Form 135) Preparation</li>
+          <li>Opposition and Intervention in Contested Zoning Cases</li>
+        </ul>
+
+        <h2>How the DC Zoning Process Works</h2>
+        <p>In Washington, DC, most zoning relief — whether a variance, special exception, or planned unit development — is decided by the Board of Zoning Adjustment (BZA). The process typically begins with a feasibility assessment: we review your property's zoning designation, the applicable regulations under the 2016 Zoning Regulations (11 DCMR), and the specific relief needed for your project.</p>
+        <p>From there, we prepare and file the application, coordinate outreach to your Advisory Neighborhood Commission (ANC) and adjacent property owners, and represent you at the BZA hearing. For projects involving historic properties, we also handle review before the Historic Preservation Review Board.</p>
+        <p>The timeline from application to decision is typically three to six months, depending on the complexity of the relief sought and whether opposition is filed.</p>
+
+        <h2>Homeowners and Small Property Owners</h2>
+        <p>You don't need to be a large developer to need zoning help. Many of our clients are DC homeowners who want to add a rear addition, convert a basement to a rental unit, build an accessory dwelling unit (ADU), or make changes to a property in a historic district. These projects frequently require variances or special exceptions — and the BZA process can be intimidating without experienced counsel.</p>
+        <p>We explain the process in plain language, handle the paperwork and filings, manage the ANC relationship, and represent you at the hearing. Our goal is to make zoning approvals straightforward so you can focus on your project.</p>
+
+        <h2>Why Myers &amp; Shah</h2>
+        <p>Our practice combines deep knowledge of DC and Virginia zoning codes with real litigation experience. If a zoning decision is challenged — or if you need to challenge one — we have the courtroom skills to protect your position. And because we also practice in development incentives and commercial leasing, we understand how zoning decisions fit into the larger picture of a project's feasibility and financing.</p>
+
+      </div>
+      <aside class="pa-detail-sidebar">
+        <div class="sidebar-card">
+          <h4>Need a Zoning Approval?</h4>
+          <p>Tell us about your property and your project. We'll assess the regulatory path and help you understand your options.</p>
+          <a href="https://calendly.com/mmyers-myersshah" class="sidebar-btn">Contact Us</a>
+        </div>
+        <div class="sidebar-related">
+          <h4>Related Practice Areas</h4>
+
+          <a href="/development-incentives">Development &amp; Tax Incentives</a>
+          <a href="/land-use-litigation">Land Use Litigation</a>
+          <a href="/commercial-leasing">Commercial Leasing</a>
+
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- BOTTOM CTA -->
+  <section class="pa-bottom-cta">
+    <h3>Ready to Start Your Zoning Application?</h3>
+    <p>Contact us today to schedule a consultation.</p>
+    <a href="https://calendly.com/mmyers-myersshah" class="cta-btn">Get in Touch</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="/" class="nav-logo">
+          <span class="nav-logo-name">Myers &amp; Shah</span>
+          <span class="nav-logo-type">Attorneys at Law</span>
+        </a>
+        <p>Washington, DC &amp; Virginia</p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Real Estate &amp; Land Use</h5>
+        <ul>
+          <li><a href="/zoning-and-entitlements">Zoning &amp; Entitlements</a></li>
+          <li><a href="/development-incentives">Development &amp; Tax Incentives</a></li>
+          <li><a href="/land-use-litigation">Land Use Litigation</a></li>
+          <li><a href="/commercial-leasing">Commercial Leasing</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Tax &amp; Estate</h5>
+        <ul>
+          <li><a href="/tax-planning">Tax Planning</a></li>
+          <li><a href="/trusts-and-estates">Trusts &amp; Estates</a></li>
+          <li><a href="/trust-and-estate-litigation">Estate Litigation</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>The Firm</h5>
+        <ul>
+          <li><a href="/attorneys">Our Attorneys</a></li>
+          <li><a href="https://calendly.com/mmyers-myersshah">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="tel:+17032890452">(703) 289-0452</a></li>
+          <li><a href="tel:+12029887553">(202) 988-7553</a></li>
+          <li><a href="mailto:info@myersshah.com">info@myersshah.com</a></li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Myers &amp; Shah PLLC, Attorneys at Law. All rights reserved.</p>
+      <p style="margin-top: 8px;">Prior results do not guarantee a similar outcome. The information on this website is for general informational purposes only and does not constitute legal advice.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
